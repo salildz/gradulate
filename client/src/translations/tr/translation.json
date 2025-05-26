@@ -1,0 +1,19 @@
+{
+  "auth": {
+    "login": "Giriş",
+    "logout": "Çıkış",
+    "signUp": "Kayıt Ol",
+    "email": "E-posta",
+    "firstName": "Ad",
+    "lastName": "Soyad",
+    "password": "Parola",
+    "confirmPassword": "Parolayı Onayla",
+    "forgotPassword": "Parolanızı mı unuttunuz?",
+    "resetPassword": "Parolayı Sıfırla",
+    "sendResetLink": "Sıfırlama Bağlantısını Gönder",
+    "rememberMe": "Beni Hatırla",
+    "welcomeMessage": "Gradulate'e Hoş Geldin!",
+    "alreadyHaveAccount": "Zaten bir hesabınız var mı?",
+    "dontHaveAccount": "Bir hesabınız yok mu?"
+  }
+}

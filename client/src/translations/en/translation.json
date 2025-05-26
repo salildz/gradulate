@@ -1,0 +1,19 @@
+{
+  "auth": {
+    "login": "Log in",
+    "logout": "Logout",
+    "signUp": "Sign Up",
+    "email": "Email",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "forgotPassword": "Forgot Password?",
+    "resetPassword": "Reset Password",
+    "sendResetLink": "Send Reset Link",
+    "rememberMe": "Remember Me",
+    "welcomeMessage": "Welcome to Gradulate!",
+    "alreadyHaveAccount": "Already have an account?",
+    "dontHaveAccount": "Don't have an account?"
+  }
+}
