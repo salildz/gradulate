@@ -1,6 +1,8 @@
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import Signup from "./components/auth/Signup";
+import Login from "./components/Auth/Login";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
   const darkTheme = createTheme({
@@ -12,7 +14,13 @@ function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
-      <Signup />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Navigate to="/signup" replace />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </Router>
     </ThemeProvider>
   );
 }

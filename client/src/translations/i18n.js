@@ -6,10 +6,16 @@ import translationEN from './en/translation.json';
 import translationTR from './tr/translation.json';
 
 const resources = {
-    en: {
+    "en-US": {
         translation: translationEN,
     },
-    tr: {
+    "en": {
+        translation: translationEN,
+    },
+    "tr-TR": {
+        translation: translationTR,
+    },
+    "tr": {
         translation: translationTR,
     }
 };
@@ -19,7 +25,7 @@ i18n
     .use(initReactI18next)
     .init({
         resources,
-        fallbackLng: 'tr',
+        fallbackLng: 'en-US',
         interpolation: {
             escapeValue: false
         },
