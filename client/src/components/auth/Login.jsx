@@ -3,6 +3,7 @@ import React from "react";
 import CustomInput from "../form/CustomInput";
 import Leyla from "../imageCards/Leyla";
 import { useTranslation } from "react-i18next";
+import { blue } from "@mui/material/colors";
 
 const Login = () => {
   const { t } = useTranslation();
@@ -23,10 +24,10 @@ const Login = () => {
     <Grid container spacing={2} justifyContent="center" sx={{ height: "100%" }}>
       <Grid size={{ xs: 12, lg: 5 }}>
         <Box sx={{ height: "100%", width: "100%", p: { xs: 3, lg: 9 }, px: { xs: 0, lg: 16 }, display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <Card raised sx={{ width: "100%", borderRadius: 4, py: { xs: 2, lg: 8 } }}>
+          <Card raised sx={{ width: "100%", borderRadius: 4, py: { xs: 2, lg: 8 }, background: (theme) => `linear-gradient(225deg, ${blue[900]} 3%, ${theme.palette.background.default} 25%, ${blue[900]} 120%)` }}>
             <CardContent>
               <Box sx={{ display: "flex", justifyContent: "center" }}>
-                <Typography variant="h3" fontWeight={"bold"} gutterBottom>
+                <Typography variant="h3" fontWeight={"bold"} color="primary" gutterBottom>
                   {t("auth.login")}
                 </Typography>
               </Box>
