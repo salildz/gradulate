@@ -15,5 +15,26 @@
     "welcomeMessage": "Gradulate'e Hoş Geldin!",
     "alreadyHaveAccount": "Zaten bir hesabınız var mı?",
     "dontHaveAccount": "Bir hesabınız yok mu?"
+  },
+  "general": {
+    "loading": "Yükleniyor...",
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "add": "Ekle",
+    "view": "Görüntüle"
+  },
+  "dashboard": {
+    "courses": "Kurslar",
+    "userSettings": "Ayarlar"
+  },
+  "settings": {
+    "userSettings": "Kullanıcı Ayarları",
+    "semestersPerYear": "Yılda Dönem Sayısı",
+    "semestersPerYearDescription": "Yılda dönem sayısı, bir yıl içinde kaç akademik dönemin bulunduğunu gösterir.",
+    "semester": "Dönem",
+    "programDuration": "Program Süresi",
+    "programDurationDescription": "Program süresi, mezuniyet için gereken toplam yıl sayısını gösterir."
   }
 }

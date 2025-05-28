@@ -23,6 +23,7 @@ import { useTranslation } from "react-i18next";
 import TranslateIcon from "@mui/icons-material/Translate";
 import LogoutRoundedIcon from "@mui/icons-material/LogoutRounded";
 import ManageAccountsRoundedIcon from "@mui/icons-material/ManageAccountsRounded";
+import UserSettings from "./UserSettings";
 
 const DRAWER_WIDTH = 240;
 const LANG_MAP = {
@@ -31,6 +32,10 @@ const LANG_MAP = {
   tr: "tr",
   "tr-TR": "tr",
 };
+const PAGES = [
+  { name: "Transcript scenario", content: <div>Transcript scenario</div>, icon: <InboxIcon /> },
+  { name: "User settings", content: <UserSettings />, icon: <ManageAccountsRoundedIcon /> },
+];
 
 const openedMixin = (theme) => ({
   width: DRAWER_WIDTH,
@@ -108,11 +113,12 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== "open" 
   ],
 }));
 
-export default function MiniDrawer({ children }) {
+export default function MiniDrawer() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
   const { i18n, t } = useTranslation();
   const normalizedLang = LANG_MAP[i18n.language] || "en-US";
+  const [selectedPage, setSelectedPage] = React.useState(PAGES[1]);
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -173,19 +179,25 @@ export default function MiniDrawer({ children }) {
         </DrawerHeader>
         <Divider />
         <List>
-          <ListItem disablePadding sx={{ display: "block" }}>
-            <ListItemButton sx={[{ minHeight: 48, px: 2.5 }, open ? { justifyContent: "initial" } : { justifyContent: "center" }]}>
-              <ListItemIcon sx={[{ minWidth: 0, justifyContent: "center" }, open ? { mr: 3 } : { mr: "auto" }]}>
-                <InboxIcon />
-              </ListItemIcon>
-              <ListItemText primary={"Transcript scenario"} sx={[open ? { opacity: 1 } : { opacity: 0 }]} />
-            </ListItemButton>
-          </ListItem>
+          {PAGES.map((page, index) => (
+            <ListItem key={index} disablePadding sx={{ display: "block" }}>
+              <ListItemButton
+                sx={[{ minHeight: 48, px: 2.5 }, open ? { justifyContent: "initial" } : { justifyContent: "center" }]}
+                onClick={() => {
+                  setSelectedPage(page);
+                  setOpen(false);
+                }}
+              >
+                <ListItemIcon sx={[{ minWidth: 0, justifyContent: "center" }, open ? { mr: 3 } : { mr: "auto" }]}>{page.icon}</ListItemIcon>
+                <ListItemText primary={page.name} sx={[open ? { opacity: 1 } : { opacity: 0 }]} />
+              </ListItemButton>
+            </ListItem>
+          ))}
         </List>
       </Drawer>
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
-        {children}
+        {selectedPage.content}
       </Box>
     </Box>
   );

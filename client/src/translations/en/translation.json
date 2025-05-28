@@ -15,5 +15,26 @@
     "welcomeMessage": "Welcome to Gradulate!",
     "alreadyHaveAccount": "Already have an account?",
     "dontHaveAccount": "Don't have an account?"
+  },
+  "general": {
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "view": "View"
+  },
+  "dashboard": {
+    "courses": "Courses",
+    "userSettings": "User settings"
+  },
+  "settings": {
+    "userSettings": "User Settings",
+    "semestersPerYear": "Semesters per Year",
+    "semestersPerYearDescription": "The number of semesters per year indicates how many academic terms are included in a single year.",
+    "semester": "Semester",
+    "programDuration": "Program Duration",
+    "programDurationDescription": "The program duration indicates the total number of years required for graduation."
   }
 }

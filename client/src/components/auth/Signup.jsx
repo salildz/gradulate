@@ -58,7 +58,7 @@ const Signup = () => {
           </Card>
         </Box>
       </Grid>
-      <Grid size={{ xs: 0, lg: 7 }}>
+      <Grid size={{ xs: 0, md: 5, lg: 7 }}>
         <Box sx={{ height: "100vh", overflow: "hidden" }}>
           <Leyla />
         </Box>
