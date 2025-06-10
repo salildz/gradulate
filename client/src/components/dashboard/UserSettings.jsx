@@ -6,11 +6,13 @@ import CustomNumberInput from "../form/CustomNumberInput";
 const UserSettings = () => {
   const { t } = useTranslation();
   const [formData, setFormData] = useState({
-    semesterPerYear: 0,
+    semesterPerYear: null,
     coursesPerSemester: [],
   });
   const handleChange = (event) => {
     const { name, value } = event.target;
+    console.log("handleChange", name, value);
+    console.log("formData", formData);
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
@@ -18,19 +20,19 @@ const UserSettings = () => {
   };
 
   return (
-    //okulunun bir senede kaç dönemi olduğunu seçebilir, bir d önemde kaç ders olduğunu ve hangi derslerin olduğunu seçebilir, bir dersin kaç kredi olduğunu seçebilir vsvs hepsi için bir ayar sayfası bu
     <Grid container spacing={2} justifyContent="start">
       <Grid size={{ xs: 12, xl: 6 }}>
-        <Card>
+        <Card elevation={3} sx={{ borderRadius: 4 }}>
           <CardContent>
-            <Typography variant="h3" fontWeight={"bold"} color="primary" gutterBottom>
+            <Typography variant="h4" fontWeight={"bold"} color="primary" gutterBottom sx={{ textAlign: "center" }}>
               {t("settings.userSettings")}
             </Typography>
             <Stack spacing={4} sx={{ mt: 4, px: { xs: 2, md: 6 } }}>
+              <CustomNumberInput name="semesterPerYear" label={t("settings.semestersPerYear")} value={formData.semesterPerYear} onChange={handleChange} />
               <Box sx={{ display: "flex", justifyContent: "center", mt: 2 }}>
                 <Button
                   variant="contained"
-                  size="large"
+                  size="medium"
                   sx={{
                     minWidth: 200,
                     py: 1.5,
