@@ -24,6 +24,7 @@ import TranslateIcon from "@mui/icons-material/Translate";
 import LogoutRoundedIcon from "@mui/icons-material/LogoutRounded";
 import ManageAccountsRoundedIcon from "@mui/icons-material/ManageAccountsRounded";
 import UserSettings from "./UserSettings";
+import Scenario from "./Scenario";
 
 const DRAWER_WIDTH = 240;
 const LANG_MAP = {
@@ -33,7 +34,7 @@ const LANG_MAP = {
   "tr-TR": "tr",
 };
 const PAGES = [
-  { name: "Transcript scenario", content: <div>Transcript scenario</div>, icon: <InboxIcon /> },
+  { name: "Transcript scenario", content: <Scenario />, icon: <InboxIcon /> },
   { name: "User settings", content: <UserSettings />, icon: <ManageAccountsRoundedIcon /> },
 ];
 

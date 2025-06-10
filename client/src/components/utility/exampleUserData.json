@@ -1,0 +1,531 @@
+{
+  "student": {
+    "id": "202012345",
+    "firstName": "Ahmet",
+    "lastName": "Yılmaz",
+    "department": "Bilgisayar Mühendisliği",
+    "faculty": "Mühendislik Fakültesi",
+    "university": "İstanbul Teknik Üniversitesi",
+    "enrollmentYear": 2020,
+    "graduationYear": 2024,
+    "gpa": 3.45,
+    "totalCredits": 240,
+    "totalEarnedCredits": 240
+  },
+  "academicYears": [
+    {
+      "year": 1,
+      "yearGPA": 3.12,
+      "yearCredits": 60,
+      "semesters": [
+        {
+          "semester": 1,
+          "semesterName": "Güz 2020",
+          "gpa": 3.05,
+          "totalCredits": 30,
+          "courses": [
+            {
+              "code": "MAT101",
+              "name": "Matematik I",
+              "credits": 4,
+              "grade": "BB",
+              "gradePoint": 3.0,
+              "status": "Geçti"
+            },
+            {
+              "code": "FIZ101",
+              "name": "Fizik I",
+              "credits": 4,
+              "grade": "CB",
+              "gradePoint": 2.5,
+              "status": "Geçti"
+            },
+            {
+              "code": "BIL101",
+              "name": "Programlamaya Giriş",
+              "credits": 4,
+              "grade": "BA",
+              "gradePoint": 3.5,
+              "status": "Geçti"
+            },
+            {
+              "code": "ING101",
+              "name": "İngilizce I",
+              "credits": 3,
+              "grade": "BB",
+              "gradePoint": 3.0,
+              "status": "Geçti"
+            },
+            {
+              "code": "TUR101",
+              "name": "Türk Dili ve Edebiyatı I",
+              "credits": 2,
+              "grade": "AA",
+              "gradePoint": 4.0,
+              "status": "Geçti"
+            },
+            {
+              "code": "TAR101",
+              "name": "Atatürk İlkeleri ve İnkılap Tarihi I",
+              "credits": 2,
+              "grade": "BA",
+              "gradePoint": 3.5,
+              "status": "Geçti"
+            },
+            {
+              "code": "BED101",
+              "name": "Beden Eğitimi I",
+              "credits": 1,
+              "grade": "AA",
+              "gradePoint": 4.0,
+              "status": "Geçti"
+            }
+          ]
+        },
+        {
+          "semester": 2,
+          "semesterName": "Bahar 2021",
+          "gpa": 3.19,
+          "totalCredits": 30,
+          "courses": [
+            {
+              "code": "MAT102",
+              "name": "Matematik II",
+              "credits": 4,
+              "grade": "BB",
+              "gradePoint": 3.0,
+              "status": "Geçti"
+            },
+            {
+              "code": "FIZ102",
+              "name": "Fizik II",
+              "credits": 4,
+              "grade": "BB",
+              "gradePoint": 3.0,
+              "status": "Geçti"
+            },
+            {
+              "code": "BIL102",
+              "name": "Nesne Yönelimli Programlama",
+              "credits": 4,
+              "grade": "BA",
+              "gradePoint": 3.5,
+              "status": "Geçti"
+            },
+            {
+              "code": "ING102",
+              "name": "İngilizce II",
+              "credits": 3,
+              "grade": "AA",
+              "gradePoint": 4.0,
+              "status": "Geçti"
+            },
+            {
+              "code": "TUR102",
+              "name": "Türk Dili ve Edebiyatı II",
+              "credits": 2,
+              "grade": "BA",
+              "gradePoint": 3.5,
+              "status": "Geçti"
+            },
+            {
+              "code": "TAR102",
+              "name": "Atatürk İlkeleri ve İnkılap Tarihi II",
+              "credits": 2,
+              "grade": "BB",
+              "gradePoint": 3.0,
+              "status": "Geçti"
+            },
+            {
+              "code": "BED102",
+              "name": "Beden Eğitimi II",
+              "credits": 1,
+              "grade": "AA",
+              "gradePoint": 4.0,
+              "status": "Geçti"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "yearGPA": 3.42,
+      "yearCredits": 60,
+      "semesters": [
+        {
+          "semester": 3,
+          "semesterName": "Güz 2021",
+          "gpa": 3.33,
+          "totalCredits": 30,
+          "courses": [
+            {
+              "code": "MAT201",
+              "name": "Matematik III (Diferansiyel Denklemler)",
+              "credits": 4,
+              "grade": "BB",
+              "gradePoint": 3.0,
+              "status": "Geçti"
+            },
+            {
+              "code": "BIL201",
+              "name": "Veri Yapıları ve Algoritmalar",
+              "credits": 4,
+              "grade": "BA",
+              "gradePoint": 3.5,
+              "status": "Geçti"
+            },
+            {
+              "code": "BIL203",
+              "name": "Sayısal Mantık Tasarımı",
+              "credits": 4,
+              "grade": "BB",
+              "gradePoint": 3.0,
+              "status": "Geçti"
+            },
+            {
+              "code": "ELK201",
+              "name": "Elektrik Devreleri",
+              "credits": 3,
+              "grade": "CB",
+              "gradePoint": 2.5,
+              "status": "Geçti"
+            },
+            {
+              "code": "IST201",
+              "name": "İstatistik ve Olasılık",
+              "credits": 3,
+              "grade": "BA",
+              "gradePoint": 3.5,
+              "status": "Geçti"
+            },
+            {
+              "code": "SEÇ201",
+              "name": "Teknik İletişim",
+              "credits": 2,
+              "grade": "AA",
+              "gradePoint": 4.0,
+              "status": "Geçti"
+            }
+          ]
+        },
+        {
+          "semester": 4,
+          "semesterName": "Bahar 2022",
+          "gpa": 3.51,
+          "totalCredits": 30,
+          "courses": [
+            {
+              "code": "BIL202",
+              "name": "Bilgisayar Organizasyonu",
+              "credits": 4,
+              "grade": "BA",
+              "gradePoint": 3.5,
+              "status": "Geçti"
+            },
+            {
+              "code": "BIL204",
+              "name": "Veritabanı Yönetim Sistemleri",
+              "credits": 4,
+              "grade": "AA",
+              "gradePoint": 4.0,
+              "status": "Geçti"
+            },
+            {
+              "code": "BIL206",
+              "name": "İşletim Sistemleri",
+              "credits": 4,
+              "grade": "BB",
+              "gradePoint": 3.0,
+              "status": "Geçti"
+            },
+            {
+              "code": "MAT202",
+              "name": "Ayrık Matematik",
+              "credits": 3,
+              "grade": "BA",
+              "gradePoint": 3.5,
+              "status": "Geçti"
+            },
+            {
+              "code": "ELK202",
+              "name": "Elektronik",
+              "credits": 3,
+              "grade": "BB",
+              "gradePoint": 3.0,
+              "status": "Geçti"
+            },
+            {
+              "code": "SEÇ202",
+              "name": "Girişimcilik",
+              "credits": 2,
+              "grade": "AA",
+              "gradePoint": 4.0,
+              "status": "Geçti"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "yearGPA": 3.65,
+      "yearCredits": 60,
+      "semesters": [
+        {
+          "semester": 5,
+          "semesterName": "Güz 2022",
+          "gpa": 3.6,
+          "totalCredits": 30,
+          "courses": [
+            {
+              "code": "BIL301",
+              "name": "Yazılım Mühendisliği",
+              "credits": 4,
+              "grade": "BA",
+              "gradePoint": 3.5,
+              "status": "Geçti"
+            },
+            {
+              "code": "BIL303",
+              "name": "Bilgisayar Ağları",
+              "credits": 4,
+              "grade": "AA",
+              "gradePoint": 4.0,
+              "status": "Geçti"
+            },
+            {
+              "code": "BIL305",
+              "name": "Mikroişlemci Sistemleri",
+              "credits": 4,
+              "grade": "BB",
+              "gradePoint": 3.0,
+              "status": "Geçti"
+            },
+            {
+              "code": "BIL307",
+              "name": "Programlama Dilleri",
+              "credits": 3,
+              "grade": "BA",
+              "gradePoint": 3.5,
+              "status": "Geçti"
+            },
+            {
+              "code": "MAT301",
+              "name": "Sayısal Analiz",
+              "credits": 3,
+              "grade": "BB",
+              "gradePoint": 3.0,
+              "status": "Geçti"
+            },
+            {
+              "code": "SEÇ301",
+              "name": "Mesleki İngilizce",
+              "credits": 2,
+              "grade": "AA",
+              "gradePoint": 4.0,
+              "status": "Geçti"
+            }
+          ]
+        },
+        {
+          "semester": 6,
+          "semesterName": "Bahar 2023",
+          "gpa": 3.7,
+          "totalCredits": 30,
+          "courses": [
+            {
+              "code": "BIL302",
+              "name": "Algoritma Analizi",
+              "credits": 4,
+              "grade": "AA",
+              "gradePoint": 4.0,
+              "status": "Geçti"
+            },
+            {
+              "code": "BIL304",
+              "name": "Web Programlama",
+              "credits": 4,
+              "grade": "BA",
+              "gradePoint": 3.5,
+              "status": "Geçti"
+            },
+            {
+              "code": "BIL306",
+              "name": "Yapay Zeka",
+              "credits": 4,
+              "grade": "AA",
+              "gradePoint": 4.0,
+              "status": "Geçti"
+            },
+            {
+              "code": "BIL308",
+              "name": "Bilgisayar Grafikleri",
+              "credits": 3,
+              "grade": "BA",
+              "gradePoint": 3.5,
+              "status": "Geçti"
+            },
+            {
+              "code": "END301",
+              "name": "Endüstri Mühendisliğine Giriş",
+              "credits": 3,
+              "grade": "BB",
+              "gradePoint": 3.0,
+              "status": "Geçti"
+            },
+            {
+              "code": "SEÇ302",
+              "name": "Etik ve Sosyal Sorumluluk",
+              "credits": 2,
+              "grade": "AA",
+              "gradePoint": 4.0,
+              "status": "Geçti"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "yearGPA": 3.75,
+      "yearCredits": 60,
+      "semesters": [
+        {
+          "semester": 7,
+          "semesterName": "Güz 2023",
+          "gpa": 3.72,
+          "totalCredits": 30,
+          "courses": [
+            {
+              "code": "BIL401",
+              "name": "Bilgisayar Güvenliği",
+              "credits": 4,
+              "grade": "AA",
+              "gradePoint": 4.0,
+              "status": "Geçti"
+            },
+            {
+              "code": "BIL403",
+              "name": "Makine Öğrenmesi",
+              "credits": 4,
+              "grade": "BA",
+              "gradePoint": 3.5,
+              "status": "Geçti"
+            },
+            {
+              "code": "BIL405",
+              "name": "Mobil Uygulama Geliştirme",
+              "credits": 4,
+              "grade": "AA",
+              "gradePoint": 4.0,
+              "status": "Geçti"
+            },
+            {
+              "code": "BIL407",
+              "name": "Proje Yönetimi",
+              "credits": 3,
+              "grade": "BA",
+              "gradePoint": 3.5,
+              "status": "Geçti"
+            },
+            {
+              "code": "SEÇ401",
+              "name": "Bulut Bilişim",
+              "credits": 3,
+              "grade": "BB",
+              "gradePoint": 3.0,
+              "status": "Geçti"
+            },
+            {
+              "code": "SEÇ403",
+              "name": "Blockchain Teknolojileri",
+              "credits": 2,
+              "grade": "AA",
+              "gradePoint": 4.0,
+              "status": "Geçti"
+            }
+          ]
+        },
+        {
+          "semester": 8,
+          "semesterName": "Bahar 2024",
+          "gpa": 3.78,
+          "totalCredits": 30,
+          "courses": [
+            {
+              "code": "BIL402",
+              "name": "Bitirme Projesi",
+              "credits": 6,
+              "grade": "AA",
+              "gradePoint": 4.0,
+              "status": "Geçti"
+            },
+            {
+              "code": "BIL404",
+              "name": "Veri Madenciliği",
+              "credits": 4,
+              "grade": "BA",
+              "gradePoint": 3.5,
+              "status": "Geçti"
+            },
+            {
+              "code": "BIL406",
+              "name": "Dağıtık Sistemler",
+              "credits": 4,
+              "grade": "AA",
+              "gradePoint": 4.0,
+              "status": "Geçti"
+            },
+            {
+              "code": "BIL408",
+              "name": "İnsan-Bilgisayar Etkileşimi",
+              "credits": 3,
+              "grade": "BA",
+              "gradePoint": 3.5,
+              "status": "Geçti"
+            },
+            {
+              "code": "SEÇ402",
+              "name": "DevOps ve Sürekli Entegrasyon",
+              "credits": 3,
+              "grade": "BB",
+              "gradePoint": 3.0,
+              "status": "Geçti"
+            },
+            {
+              "code": "STJ400",
+              "name": "Staj",
+              "credits": 0,
+              "grade": "GEÇTİ",
+              "gradePoint": 0,
+              "status": "Geçti"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "gradeScale": {
+    "AA": { "min": 90, "max": 100, "point": 4.0, "description": "Mükemmel" },
+    "BA": { "min": 85, "max": 89, "point": 3.5, "description": "Çok İyi" },
+    "BB": { "min": 80, "max": 84, "point": 3.0, "description": "İyi" },
+    "CB": { "min": 75, "max": 79, "point": 2.5, "description": "Orta" },
+    "CC": { "min": 70, "max": 74, "point": 2.0, "description": "Geçer" },
+    "DC": { "min": 65, "max": 69, "point": 1.5, "description": "Şartlı Geçer" },
+    "DD": { "min": 60, "max": 64, "point": 1.0, "description": "Şartlı Geçer" },
+    "FF": { "min": 0, "max": 59, "point": 0.0, "description": "Başarısız" }
+  },
+  "summary": {
+    "totalCourses": 62,
+    "passedCourses": 62,
+    "failedCourses": 0,
+    "totalCredits": 240,
+    "earnedCredits": 240,
+    "cumulativeGPA": 3.45,
+    "graduationStatus": "Mezun",
+    "rank": "Onur Öğrencisi",
+    "minGPARequired": 2.0,
+    "minCreditsRequired": 240
+  }
+}

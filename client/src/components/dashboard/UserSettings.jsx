@@ -6,8 +6,8 @@ import CustomNumberInput from "../form/CustomNumberInput";
 const UserSettings = () => {
   const { t } = useTranslation();
   const [formData, setFormData] = useState({
-    semesterPerYear: null,
-    coursesPerSemester: [],
+    semesterPerYear: 0,
+    programDuration: 0,
   });
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -20,7 +20,7 @@ const UserSettings = () => {
   };
 
   return (
-    <Grid container spacing={2} justifyContent="start">
+    <Grid container spacing={2} justifyContent="start" className="prevent-selection">
       <Grid size={{ xs: 12, xl: 6 }}>
         <Card elevation={3} sx={{ borderRadius: 4 }}>
           <CardContent>
@@ -28,7 +28,14 @@ const UserSettings = () => {
               {t("settings.userSettings")}
             </Typography>
             <Stack spacing={4} sx={{ mt: 4, px: { xs: 2, md: 6 } }}>
-              <CustomNumberInput name="semesterPerYear" label={t("settings.semestersPerYear")} value={formData.semesterPerYear} onChange={handleChange} />
+              <Grid container spacing={2} sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                <Grid size={{ xs: 12, md: 6 }} sx={{ px: 4 }}>
+                  <CustomNumberInput label={t("settings.semestersPerYear")} name="semesterPerYear" value={formData.semesterPerYear} onChange={handleChange} fullWidth={true} helperText={t("settings.semestersPerYearDescription")} min={0} max={10} step={1} required={true} />
+                </Grid>
+                <Grid size={{ xs: 12, md: 6 }} sx={{ px: 4 }}>
+                  <CustomNumberInput label={t("settings.programDuration")} name="programDuration" value={formData.programDuration} onChange={handleChange} fullWidth={true} helperText={t("settings.programDurationDescription")} min={0} max={10} step={1} required={true} />
+                </Grid>
+              </Grid>
               <Box sx={{ display: "flex", justifyContent: "center", mt: 2 }}>
                 <Button
                   variant="contained"
