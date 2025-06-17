@@ -18,7 +18,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
-import { Avatar, Button, InputAdornment, MenuItem, Select, Stack } from "@mui/material";
+import { InputAdornment, MenuItem, Select } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import TranslateIcon from "@mui/icons-material/Translate";
 import LogoutRoundedIcon from "@mui/icons-material/LogoutRounded";
@@ -119,7 +119,7 @@ export default function MiniDrawer() {
   const [open, setOpen] = React.useState(false);
   const { i18n, t } = useTranslation();
   const normalizedLang = LANG_MAP[i18n.language] || "en-US";
-  const [selectedPage, setSelectedPage] = React.useState(PAGES[1]);
+  const [selectedPage, setSelectedPage] = React.useState(PAGES[0]);
 
   const handleDrawerOpen = () => {
     setOpen(true);
